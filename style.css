@@ -29,7 +29,7 @@ h3 {
     color: white;
     font-size: 1rem;
     text-align: center;
-    padding: 25px;
+    padding: 15px;
     text-transform: uppercase;
 }
 form {
@@ -40,14 +40,14 @@ form {
     align-items: center;
     position: relative;
     border-radius: 30px;
-    border: white solid 1px;
-    padding: 25px;
+    border: white solid 2px;
+    padding: 20px;
 }
 .inputContainer {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 15px;
 }
 label {
     cursor: pointer;
@@ -63,7 +63,7 @@ label {
 }
 
 input {
-    padding: 25px;
+    padding: 20px;
     font-size: 1rem;
     border: 1px solid white;
     background: black;
@@ -73,13 +73,13 @@ input {
 
 input:hover {
     cursor: text;
-    border: #ff4658 1px solid;
+    border: #ff4658 2px solid;
     transition: all 200ms ease-in-out;
 }
 
 input:focus {
     outline: none;
-    border: #ff4658 1px solid;
+    border: #ff4658 2px solid;
 }
 
 input:focus + label, input:not(:placeholder-shown) + label {
@@ -92,4 +92,10 @@ input:focus + label, input:not(:placeholder-shown) + label {
 input[type=submit] {
     color: white;
     padding: 10px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    text-align: right;
+    pointer-events: none;
 }
