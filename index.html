@@ -16,16 +16,16 @@
     <div class="wrapper">
       <h1>ROI calculator</h1>
       <h3>
-        calculate your roi for your marketing strategies in 2 simple steps:
+        calculate your return on investment for your marketing strategies in 2 simple steps:
       </h3>
-      <form onsubmit="calculateRoi()">
+      <form id="form">
         <div class="inputContainer">
-          <input type="number" id="investment" placeholder=" " min="0.01"/>
+          <input type="number" id="investment" placeholder=" " min="0.01" step="0.01" oninput="getValue()"/>
           <label for="investment">investment (€)</label>
         </div>
 
         <div class="inputContainer">
-          <input type="number" id="income" placeholder=" " min="0.01"/>
+          <input type="number" id="income" placeholder=" " min="0.01" step="0.01"  oninput="getValue()"/>
           <label for="income">income generated (€)</label>
         </div>
 
