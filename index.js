@@ -9,7 +9,6 @@ let incomeGenerated;
 function getValue() {
     investmentCost = investment.value;
     incomeGenerated = income.value;
-    console.log(investmentCost, incomeGenerated)
 }
 function calculateRoi(e) {
     e.preventDefault();
@@ -19,7 +18,4 @@ function calculateRoi(e) {
 
     document.getElementById("result").value = `${parsedResult} €`
 
-    console.log(result);
-    console.log(investmentCost);
-    console.log(incomeGenerated);
 }
