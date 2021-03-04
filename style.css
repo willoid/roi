@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: black;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    color:#ff4658;
+    font-size: 3rem;
+    text-align: center;
+    padding: 25px 25px 10px 25px;
+    text-transform: uppercase;
+}
+h3 {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 25px;
+    text-transform: uppercase;
+}
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    border: white solid 1px;
+    padding: 25px;
+}
+.inputContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+label {
+    cursor: pointer;
+    grid-template-rows: 125px 1fr;
+    row-gap: 25px;
+    text-align: left;
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    top: 25px;
+    left: 25px;
+    transition: all 200ms ease-in-out;
+}
+
+input {
+    padding: 25px;
+    font-size: 1rem;
+    border: 1px solid white;
+    background: black;
+    border-radius: 10px;
+    color: white;
+}
+
+input:hover {
+    cursor: text;
+    border: #ff4658 1px solid;
+    transition: all 200ms ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border: #ff4658 1px solid;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label {
+    font-size: 0.8rem;
+    top: -8px;
+    left: 13px;
+    background: black;
+}
+
+input[type=submit] {
+    color: white;
+    padding: 10px;
+}
